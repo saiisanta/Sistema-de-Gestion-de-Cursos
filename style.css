@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    --c-brand-1: #FC7753;
+    --c-brand-2: #F2EFEA;
+  }
+
+  
+  
+  .cookie-regular {
+    font-family: "Cookie", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .navbar {
+    background-color: var(--c-brand-1);
+    height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.196));
+  }
+  
+  .navbar-title {
+    color: var(--c-brand-2);
+    font-family: "Cookie", cursive;
+    font-size: 7vh;
+    margin: 0;
+    text-decoration: none;
+  }
+  
+  body, html {
+    height: 100%;
+  }
+
+  #formCurso{
+    background-color: var(--c-brand-1);
+    padding: 3vh;
+    border-radius: 30px;
+  }
+
+  #formCurso h1{
+   color: var(--c-brand-2);
+  }
+
+  #formEstudiante{
+    background-color: var(--c-brand-1);
+    padding: 3vh;
+    border-radius: 30px;
+    margin-top: 3vh;
+  }
+
+  #formEstudiante{
+   color: var(--c-brand-2);
+  }
+
+  .boton{
+    align-items: center;
+    background-clip: padding-box;
+    background-color: var(--c-brand-2);
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+    box-sizing: border-box;
+    color: var(--c-brand-1);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: system-ui,-apple-system,system-ui,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: 1.25;
+    margin: 0;
+    min-height: 3rem;
+    padding: calc(.875rem - 1px) calc(1.5rem - 1px);
+    position: relative;
+    text-decoration: none;
+    transition: all 250ms;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    width: auto;
+    margin-top: 3vh;
+   }
+
+.boton:focus {
+  background-color: #fb8332;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+}
+
+.boton:hover {
+  transform: translateY(-1px);
+}
+
+.boton:active {
+  background-color: #c85000;
+  box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
+  transform: translateY(0);
+}
+
+.select{
+    background-color: var(--c-brand-2);
+    color: var(--c-brand-1);
+}
+
+#listadoCursos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: var(--c-brand-2);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  margin-left: 6vh;
+}
+
+.curso-item {
+  background-color: var(--c-brand-1) !important;
+  color: var(--c-brand-2) !important;
+  font-weight: 600;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 10px;
+  flex: 1 1 calc(30% - 20px);
+  box-sizing: border-box;
+  transition: transform 0.3s;
+}
+
+.curso-item:hover {
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: var(--c-brand-2);
+}
+
+@media (max-width: 768px) {
+  .curso-item {
+      flex: 1 1 calc(45% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .curso-item {
+      flex: 1 1 100%;
+  }
+}
